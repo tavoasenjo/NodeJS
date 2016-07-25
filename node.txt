@@ -1,0 +1,4 @@
+What is NodeJS?
+
+- Open Source, cross platform runtime environment for developing SERVER-SIDE applications. 
+- Simple Answer: JAVASCRIPT ON THE SERVER.
