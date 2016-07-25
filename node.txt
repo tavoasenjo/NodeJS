@@ -1,4 +1,17 @@
 What is NodeJS?
-
 - Open Source, cross platform runtime environment for developing SERVER-SIDE applications. 
-- Simple Answer: JAVASCRIPT ON THE SERVER.
+- Built on the Google Chrome V8 JavaScript engine.
+- Asynchronous - maximize the usage of a single cpu as well as memory.
+- Simple Answer: JAVASCRIPT ON THE SERVER. (usually is execute it on the browser - client).
+
+
+What is Express?
+- It is NodeJS module that gives us a full framework, router system and a http server.
+
+
+
+
+
+
+Solutions
+sudo chown -R $USER:$GROUP ~/.npm

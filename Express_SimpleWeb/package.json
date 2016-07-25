@@ -1,0 +1,17 @@
+{
+  "name": "express_simpleweb",
+  "version": "1.0.0",
+  "description": "Simple Website with express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tavo",
+  "license": "ISC",
+  "dependencies": {
+  	"body-parser": "*",
+  	"express": "*",
+  	"nodemailer": "*",
+  	"pug": "*"
+  }
+}
