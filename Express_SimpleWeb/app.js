@@ -35,7 +35,7 @@ app.post("/contact/send", function(req, res){
 		service: 'Gmail',
 		auth: {
 			user: 'tavoasenjo@gmail.com',
-			pass: 'dumekups8694'
+			pass: 'password' //use your password
 		}
 	});
 
