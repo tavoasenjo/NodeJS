@@ -1,8 +1,58 @@
-What is NodeJS?
+**************************What is NodeJS?*****************************
 - Open Source, cross platform runtime environment for developing SERVER-SIDE applications. 
 - Built on the Google Chrome V8 JavaScript engine.
 - Asynchronous - maximize the usage of a single cpu as well as memory.
-- Simple Answer: JAVASCRIPT ON THE SERVER. (usually is execute it on the browser - client).
+- Simple Answer: JAVASCRIPT ON THE SERVER. (usually is executed on the browser - client).
+
+**************************What can you build?*****************************
+- Websocket Server (chat server)
+- Fast File Upload Client
+- Ad Server
+- Any Real-Time Data Apps
+
+***********************Blocking Code VS Non-Blocking Code******************
+BC
+- Read file from Filesystem, set equal to "contents"
+- Print Contents (we cannot do this until the system reads the files)
+- Do Something
+e.i
+var contents = fs.readFileSync('/etc/hosts');
+console.log(contents);
+console.log('Doing something else');
+
+NBC (BEST Option)
+- Read file from Filesystem
+-> Whenever you're complete, print the contents (THIS IS A 'CALLBACK')
+- Do Something else. WE CAN DO SOMETHING ELSE WHILE READ ARE NOT COMPLETED.
+e.i.
+fs.readFile('/etc/hosts', function(err, contents){
+	console.log(contents);
+});
+	console.log('Do something else');
+
+Bottom Line -> Non-Blocking Code is much faster and can read 2 or more files at the same time.
+
+******************************SET UP A SERVER*****************************
+1- First we call the modules. We do that with require();
+var http = require('http');
+
+2- Call the createServer function. It takes as a single parameter a CALLBACK with request and response
+http.createServer(function(req, res){
+	res.writeHead(200); // Status code in header
+	res.write('Hello, this is a test'); //Response vody
+	res.end(); //Close the connection
+}).listen(8080); Listen for connections on this port.
+
+console.log('listening on port 8080...');
+
+3- On terminal we run: node file.js 
+
+******************************EVENTS*****************************
+
+
+
+
+
 
 
 What is Express?
